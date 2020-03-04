@@ -180,6 +180,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 258859560923942167}
     m_Modifications:
+    - target: {fileID: 7402581437325914444, guid: 5a97f59da84e9334ba65975bc53b0312,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402581437325914444, guid: 5a97f59da84e9334ba65975bc53b0312,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402581437325914444, guid: 5a97f59da84e9334ba65975bc53b0312,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 7402581437661310486, guid: 5a97f59da84e9334ba65975bc53b0312,
         type: 3}
       propertyPath: m_Name
@@ -253,12 +268,12 @@ PrefabInstance:
     - target: {fileID: 7402581437661310487, guid: 5a97f59da84e9334ba65975bc53b0312,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 24
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7402581437661310487, guid: 5a97f59da84e9334ba65975bc53b0312,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 24
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7402581437661310487, guid: 5a97f59da84e9334ba65975bc53b0312,
         type: 3}
