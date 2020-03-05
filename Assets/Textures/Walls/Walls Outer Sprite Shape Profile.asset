@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: af7181f404f1447c0a7a17b3070b952b, type: 3}
-  m_Name: Walls Inner Sprite Shape Profile
+  m_Name: Walls Outer Sprite Shape Profile
   m_EditorClassIdentifier: 
   m_Angles:
   - m_Start: -180
@@ -22,27 +22,27 @@ MonoBehaviour:
   m_CornerSprites:
   - m_CornerType: 0
     m_Sprites:
-    - {fileID: 21300000, guid: ca2e6d9464036fe4cbeef1720f559dbb, type: 3}
+    - {fileID: 21300000, guid: 85133c043bef4654789b018f3f857293, type: 3}
   - m_CornerType: 1
     m_Sprites:
-    - {fileID: 21300000, guid: e7505ff881d7faf4f926b6c335aaaa00, type: 3}
+    - {fileID: 21300000, guid: e50813d6a05af5449af268c95bd13920, type: 3}
   - m_CornerType: 2
     m_Sprites:
-    - {fileID: 21300000, guid: 8f85aa3f6cd754c45a003c4a8b8a12fb, type: 3}
+    - {fileID: 21300000, guid: 4f928a663152d3146ab67215bcc850ec, type: 3}
   - m_CornerType: 3
     m_Sprites:
-    - {fileID: 21300000, guid: 2310cbd215dc79543aa1abe5835a75f0, type: 3}
+    - {fileID: 21300000, guid: 69e9b4f212a24e7478f6e4629484ea84, type: 3}
   - m_CornerType: 4
     m_Sprites:
-    - {fileID: 21300000, guid: ca2e6d9464036fe4cbeef1720f559dbb, type: 3}
+    - {fileID: 21300000, guid: 0cdbc0d164ce33649be3c96981699ec1, type: 3}
   - m_CornerType: 5
     m_Sprites:
-    - {fileID: 21300000, guid: e7505ff881d7faf4f926b6c335aaaa00, type: 3}
+    - {fileID: 21300000, guid: 2db2133d8eb482744af854585c3ace49, type: 3}
   - m_CornerType: 6
     m_Sprites:
-    - {fileID: 21300000, guid: 8f85aa3f6cd754c45a003c4a8b8a12fb, type: 3}
+    - {fileID: 21300000, guid: 12ce0cb2712566c49bcdc46007397a3e, type: 3}
   - m_CornerType: 7
     m_Sprites:
-    - {fileID: 21300000, guid: 2310cbd215dc79543aa1abe5835a75f0, type: 3}
+    - {fileID: 21300000, guid: 9631f46b53987834ba875ffe146bffe1, type: 3}
   m_FillOffset: 0
   m_UseSpriteBorders: 0
