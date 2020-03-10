@@ -55,6 +55,7 @@ namespace PacMan
 		EnemyReturnToBaseMovement returnToBaseMovement;
 		EnemyMovementTarget exitBaseMovement;
 		EnemyMovementRandom idleMovement;
+		EnemyMovementAStar playerFollowMovement;
 
 		Coroutine flashingCoroutine;
 
@@ -66,15 +67,7 @@ namespace PacMan
 			idleMovement = new EnemyMovementRandom(mapMovingEntity);
 			returnToBaseMovement = new EnemyReturnToBaseMovement(mapMovingEntity, baseNode, SetExitBaseState);
 			exitBaseMovement = new EnemyMovementTarget(mapMovingEntity, originNode, SetPlayerFollowState);
-
-			if (state == EnemyState.Idle)
-			{
-				SetIdleInBaseState();
-			}
-			else
-			{
-				SetPlayerFollowState();
-			}
+			playerFollowMovement = new EnemyMovementAStar(mapMovingEntity, Player.instance.mapMovingEntity.nodeFrom);
 		}
 		#endregion
 
@@ -82,7 +75,10 @@ namespace PacMan
 		#region Movement
 		void Update()
 		{
-			RotateEyes(currentMovementType.currentDirection);
+			playerFollowMovement.targetNode = Player.instance.mapMovingEntity.nodeTo ?? Player.instance.mapMovingEntity.nodeFrom;
+
+			if (currentMovementType != null)
+				RotateEyes(currentMovementType.currentDirection);
 		}
 
 		private void ActivateMovementType(EnemyMovementType movementType)
@@ -131,7 +127,7 @@ namespace PacMan
 
 			canKillPlayer = true;
 
-			ActivateMovementType(randomMovement);
+			ActivateMovementType(playerFollowMovement);
 		}
 
 		public void SetReturnToBaseState()

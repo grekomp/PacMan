@@ -52,6 +52,7 @@ namespace PacMan
 			state = GameState.Playing;
 			ResumeGame();
 			EnableControls();
+			EnemyManager.Instance.enemies[0].SetPlayerFollowState();
 		}
 
 		private IEnumerator PlayGameIntro()
